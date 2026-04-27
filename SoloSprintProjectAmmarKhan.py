@@ -2,6 +2,7 @@ import csv
 import os
 
 #where data is stored
+#containers for active and disabled users
 active_users = []
 disabled_users = []
 FileName = "user_data.csv"
