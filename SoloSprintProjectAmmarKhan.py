@@ -21,7 +21,7 @@ def load_from_csv():
     else:
         print("No Data found, please start adding data.")
 
-#saving data to my file user_data.csv
+#saving data to my file user_data.csv for data persistence stretch goal
 def save_to_csv():
     """Stretch Goal: Persist users to CSV"""
     with open(FileName, mode='w', newline='') as file:
@@ -71,7 +71,7 @@ def toggle_user_status():
                 print(f"{username} has been enabled.")
                 return
 
-#choice 4 test login
+#choice 4 test login for verifying if any combos exist in dictionary
 def test_login():
     """Menu Item 4: Verify credentials"""
     name = input("Username: ")
@@ -111,6 +111,7 @@ def main_menu():
             print("Invalid choice! Try again!")
 
 #loads stored data for data persistence
+#seperate functions from main code
 if __name__ == "__main__":
     load_from_csv()
     main_menu()
